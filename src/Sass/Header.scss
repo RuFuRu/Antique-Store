@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Odin';
+  src: url('../Font/Norse-Bold.otf');
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  column-gap: 3rem;
+  background: hsl(28, 70%, 78%);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  font-family: 'Odin', sans-serif;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-right: auto;
+}
+
+img {
+  width: 36px;
+  height: 36px;
+  margin-right: 2rem;
+}
+
+div > a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 2rem;
+}
