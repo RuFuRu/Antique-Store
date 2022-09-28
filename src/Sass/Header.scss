@@ -1,12 +1,13 @@
 @use './globals/fonts.scss';
-@use './globals/vars.scss';
+@use './globals/vars.scss' as *;
+@use './globals/mixins.scss' as *;
 
 nav {
   display: flex;
   align-items: center;
   padding: 1rem;
   column-gap: 3rem;
-  background: hsl(28, 70%, 78%);
+  background-image: url('../img/oldpaper.jpg');
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   font-family: 'Odin', sans-serif;
 }
@@ -17,8 +18,7 @@ h2 {
 }
 
 h2 > a {
-  text-decoration: none;
-  color: inherit;
+  @include handleAnchor();
 }
 
 img {
@@ -27,8 +27,7 @@ img {
   margin-right: 2rem;
 }
 
-div > a {
-  text-decoration: none;
-  color: inherit;
+.header-a-con > a {
+  @include handleAnchor();
   font-size: 2rem;
 }

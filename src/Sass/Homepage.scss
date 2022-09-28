@@ -1,0 +1,49 @@
+@use './globals/fonts.scss' as *;
+@use './globals/vars.scss' as *;
+@use './globals/mixins.scss' as *;
+
+main {
+  padding: 2rem;
+  background:
+  /* top, transparent black, faked with gradient */ 
+  linear-gradient(
+    rgba(0, 0, 0, 0.7), 
+    rgba(0, 0, 0, 0.7)
+  ),
+  /* bottom, image */
+  url('../img/shippainting.jpg');
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+
+  h1 {
+    font-family: 'Odin';
+    color: $almost-white;
+    span {
+      color: $dimmed-yellow;
+    }
+    font-size: 10rem;
+    margin-top: 2rem;
+  }
+
+  .homepage-an-container {
+    margin-top: 20rem;
+  }
+
+  a {
+    display: inline-block;
+    font-family: 'Odin';
+    @include handleAnchor(none,$almost-white);
+    font-size: 2rem;
+    border: 2px solid $almost-white;
+    padding: 1rem;
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      color: $dimmed-yellow;
+      background-color: hsla(0, 7%, 84%, 0.103);
+      border-color: $dimmed-yellow;
+    }
+  }
+}
