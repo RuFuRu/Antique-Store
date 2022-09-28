@@ -16,6 +16,11 @@ h2 {
   margin-right: auto;
 }
 
+h2 > a {
+  text-decoration: none;
+  color: inherit;
+}
+
 img {
   width: 36px;
   height: 36px;

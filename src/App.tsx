@@ -12,8 +12,8 @@ function App() {
         <div className="content">
           <Routes>
             <Route path="/" element={<Homepage/>}></Route>
-            <Route path="/Collection" element={<Collection/>}></Route>
-            <Route path="/" element={<ShoppingCard/>}></Route>
+            <Route path="/collection" element={<Collection/>}></Route>
+            <Route path="/shoppingcard" element={<ShoppingCard/>}></Route>
           </Routes>
         </div>
       </div>
