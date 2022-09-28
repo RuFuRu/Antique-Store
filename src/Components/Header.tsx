@@ -5,9 +5,6 @@ function Header() {
   return (
     <nav>
       <h2>Antique Thunderstorm</h2>
-      <div>
-        <a href="#">Who are we ?</a>
-      </div>
       <div className='collection'>
         <a href="#">Our Collection</a>
       </div>

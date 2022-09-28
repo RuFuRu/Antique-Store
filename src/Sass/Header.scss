@@ -1,7 +1,5 @@
-@font-face {
-  font-family: 'Odin';
-  src: url('../Font/Norse-Bold.otf');
-}
+@use './globals/fonts.scss';
+@use './globals/vars.scss';
 
 nav {
   display: flex;
