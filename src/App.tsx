@@ -1,6 +1,6 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Header from "./Components/Header";
-import Homepage from "./Components/Homepage";
+import Homepage from "./Pages/Homepage";
 import Collection from "./Components/Collection";
 import ShoppingCard from "./Components/ShoppingCard";
 
