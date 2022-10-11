@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name": "Springfield 1822",
+        "price": 1599.99,
+        "url": "../img/shopItems/Springfield_Model_1822_Flintlock_Musket_transparent.png",
+        "tag": "firearm"
+    },
+    {
+        "id": 2,
+        "name": "Spanish Flintlock Musket",
+        "price": 3287.50,
+        "url": "../img/shopItems/Spanish_Escopeta_Flintlock_Musket.jpg",
+        "tag": "firearm"
+    },
+    {
+        "id": 3,
+        "name": "Japanese Tanegashima",
+        "price": 7023.00,
+        "url": "../img/shopItems/Tanegashima_pistol.jpg",
+        "tag": "firearm"
+    },
+    {
+        "id": 4,
+        "name": "Flintlock Pistol",
+        "price": 388.22,
+        "url": "../img/shopItems/YR0376116_Flintlock-gun.jpg",
+        "tag": "firearm"
+    },
+    {
+        "id": 5,
+        "name": "Indonesian matchlock",
+        "price": 5321.74,
+        "url": "../img/shopItems/Indonesian_matchlock_19th_century.jpg",
+        "tag": "firearm"
+    },
+    {
+        "id": 6,
+        "name": "Antique Compass",
+        "price": 118.32,
+        "url": "../img/shopItems/kompass-navigation-vintage-clipart.png",
+        "tag": "navigation"
+    },
+    {
+        "id": 7,
+        "name": "Astrolabe",
+        "price": 239.78,
+        "url": "../img/shopItems/MHS_44141_Astrolabe.jpg",
+        "tag": "navigation"
+    }
+]
