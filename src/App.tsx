@@ -1,8 +1,8 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Header from "./Components/Header";
 import Homepage from "./Pages/Homepage";
-import Collection from "./Components/Collection";
-import ShoppingCard from "./Components/ShoppingCard";
+import Collection from "./Pages/Collection";
+import ShoppingCard from "./Pages/ShoppingCard";
 
 function App() {
   return (
