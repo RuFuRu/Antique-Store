@@ -1,0 +1,63 @@
+@use './globals/fonts' as *;
+@use './globals/vars' as *;
+
+.filter-container {
+    width: clamp(300px, 20%, 400px);
+    border: 2px solid hsl(0, 0%, 51%);
+    border-radius: 20%;
+    font-family: 'Peralta';
+    padding: 2rem 1rem;
+}
+
+.filter-h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.filter-filter-type-btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    gap: 0.2rem;
+}
+
+.filter-type-button {
+    display: block;
+    font-family: 'Peralta';
+    font-size: 1.5rem;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        background-color: $yellow-brown-mix;
+    }
+}
+
+.filter-filter-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.filter-button {
+    font-family: 'Peralta';
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: 2px solid hsl(0, 84%, 63%);
+    padding: 0.5rem;
+    border-radius: 30px;
+    cursor: pointer;
+    &:hover {
+        background-color: hsl(0, 84%, 63%);
+        color: white;
+    }
+}
+
+#filter-hr1 {
+    margin-top: 1rem;
+}
+
+#filter-hr2 {
+    margin-bottom: 1.7rem;
+}
