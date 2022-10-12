@@ -1,0 +1,10 @@
+@use './globals/fonts';
+
+.shoppingitems-container {
+    width: 100%;
+    h3 {
+        font-family: 'Odin', sans-serif;
+        font-size: 4rem;
+        text-align: center;
+    }
+}
