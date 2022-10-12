@@ -3,10 +3,12 @@
 
 .filter-container {
     width: clamp(300px, 20%, 400px);
+    height: 300px;
     border: 2px solid hsl(0, 0%, 51%);
     border-radius: 20%;
     font-family: 'Peralta';
     padding: 2rem 1rem;
+    align-self: center;
 }
 
 .filter-h3 {
