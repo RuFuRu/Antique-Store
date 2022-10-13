@@ -10,7 +10,7 @@ function Header() {
         <Link to="/collection">Our Collection</Link>
       </div>
       <div className='header-a-con'>
-        <Link to="/shoppingcard"><img src={shopping} alt="shopping card" /></Link>
+        <Link to="/shoppingcard"><img src={shopping} alt="shopping card" className="shopping-cart-img"/></Link>
       </div>
     </nav>
   );

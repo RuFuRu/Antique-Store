@@ -2,9 +2,26 @@
 
 .shoppingitems-container {
     width: 100%;
-    h3 {
-        font-family: 'Odin', sans-serif;
-        font-size: 4rem;
-        text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 30px;
+    cursor: pointer;
+}
+
+.sil-img {
+    width: 300px;
+    height: 300px;
+}
+
+.sil-span-container {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0.75rem;
+    .sil-span-1 {
+        font-weight: 600;
+    }
+    .sil-span-2 {
+        margin-left: 1rem;
     }
 }

@@ -10,6 +10,11 @@ nav {
   background-image: url('../img/oldpaper.jpg');
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   font-family: 'Odin', sans-serif;
+  .shopping-cart-img {
+    width: 36px;
+    height: 36px;
+    margin-right: 2rem;
+  }
 }
 
 h2 {
@@ -19,12 +24,6 @@ h2 {
 
 h2 > a {
   @include handleAnchor();
-}
-
-img {
-  width: 36px;
-  height: 36px;
-  margin-right: 2rem;
 }
 
 .header-a-con > a {
