@@ -9,9 +9,12 @@ function Collection() {
         <div className="collection-container">
             <Header/>
             <Information/>
-            <div className="collection-filter-container">
-                <Filter/>
-                <ShoppingItems/>
+            <div className="second-collection-container">
+                <h3 className="sc-h3">Collection</h3>
+                <div className="collection-shop-item-filter-container">
+                    <Filter/>
+                    <ShoppingItems/>
+                </div>
             </div>
         </div>
     )

@@ -4,16 +4,16 @@
 .filter-container {
     width: clamp(300px, 20%, 400px);
     height: 300px;
-    border: 2px solid hsl(0, 0%, 51%);
-    border-radius: 20%;
-    font-family: 'Peralta';
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
     padding: 2rem 1rem;
-    align-self: center;
 }
 
 .filter-h3 {
     font-size: 2rem;
     text-align: center;
+    font-weight: 700;
+    font-style: italic;
 }
 
 .filter-filter-type-btn-container {
@@ -26,7 +26,7 @@
 
 .filter-type-button {
     display: block;
-    font-family: 'Peralta';
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     width: 100%;
     background-color: transparent;
@@ -43,7 +43,7 @@
 }
 
 .filter-button {
-    font-family: 'Peralta';
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     background-color: transparent;
     border: 2px solid hsl(0, 84%, 63%);

@@ -1,5 +1,15 @@
-.collection-filter-container {
-    padding-top: 5rem;
+@use './globals/fonts';
+
+.second-collection-container {
+    margin-top: 3rem;
+    .sc-h3 {
+        font-size: 4rem;
+        font-family: 'Odin', sans-serif;
+        text-align: center;
+    }
+}
+
+.collection-shop-item-filter-container {
     max-width: 1200px;
     margin: auto;
     display: flex;
