@@ -1,6 +1,14 @@
+import { useContext } from 'react';
+import AntiqueStoreContext from '../AntiqueStoreContext';
 import '../Sass/Filter.scss';
 
 function Filter() {
+    const context = useContext(AntiqueStoreContext);
+
+    const filterOut = () => {
+
+    }
+
     return (
         <div className="filter-container">
             <h3 className="filter-h3">Filter</h3>
