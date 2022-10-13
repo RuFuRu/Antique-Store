@@ -8,9 +8,10 @@ import { useState } from "react";
 
 function App() {
   const [filter, setFilter] = useState<string | null>();
-  
+  const [unFilter, setUnFilter] = useState<boolean>(true)
+
   return (
-    <AntiqueStoreContext.Provider value={{filter, setFilter}}>
+    <AntiqueStoreContext.Provider value={{filter, setFilter, unFilter, setUnFilter}}>
       <BrowserRouter>
         <div className="app">
           <Routes>

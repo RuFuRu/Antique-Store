@@ -5,8 +5,8 @@ import currencyFormat from '../OtherFunctions/currencyFormat';
 
 function ShoppingItemsList() {
     const context = useContext(AntiqueStoreContext);
-
-    const listedItems = shopItems.filter(item => item.tag !== context?.filter).map(item => (
+ 
+    const listedItems = shopItems.filter(item => item.tag === context?.filter || context?.unFilter).map(item => (
         <div className="shoppingitemslist-container" key={item.id}>
             <img src={`${item.url}`} alt="item picture" className="sil-img"/>
             <div className="sil-span-container">
