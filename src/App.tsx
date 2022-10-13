@@ -5,9 +5,10 @@ import ShoppingCard from "./Pages/ShoppingCard";
 import AntiqueStoreContext from "./AntiqueStoreContext";
 import { useState } from "react";
 
-const [filter, setFilter] = useState<string>();
 
 function App() {
+  const [filter, setFilter] = useState<string | null>();
+  
   return (
     <AntiqueStoreContext.Provider value={{filter, setFilter}}>
       <BrowserRouter>

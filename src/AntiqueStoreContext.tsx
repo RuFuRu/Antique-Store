@@ -1,8 +1,8 @@
 import {createContext} from 'react';
 
 interface AntiqueStoreContextInterface {
-    filter: string | undefined,
-    setFilter: React.Dispatch<React.SetStateAction<string | undefined>>
+    filter: string | null | undefined,
+    setFilter: React.Dispatch<React.SetStateAction<string | null | undefined>>
 }
 
 const AntiqueStoreContext = createContext<AntiqueStoreContextInterface | null>(null);
