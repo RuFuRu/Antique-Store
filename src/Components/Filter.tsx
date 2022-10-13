@@ -9,12 +9,9 @@ function Filter() {
 
     const filterOut = (e: MouseEvent) => {
         const eventTarget = e.target as HTMLButtonElement;
-        if(eventTarget.className === 'fb-clicked') {
-            context?.setFilter(null);
-            eventTarget.classList.toggle('fb-clicked');
-        }
         context?.setFilter(eventTarget.getAttribute('name'));
         eventTarget.classList.toggle('fb-clicked');
+        console.log(context?.filter);
     }
 
     return (
@@ -24,6 +21,7 @@ function Filter() {
             <div className="filter-filter-type-btn-container">
                 <button className="filter-type-button" name="firearm" onClick={(e) => (filterOut(e))}>Firearms</button>
                 <button className="filter-type-button" name="navigation" onClick={(e) => (filterOut(e))}>Navigation</button>
+                <button className="filter-type-button" name="reset-filter" onClick={(e) => (filterOut(e))}>Reset</button>
             </div>
             <hr id="filter-hr2"/>
             <div className="filter-filter-btn">
