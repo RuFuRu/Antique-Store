@@ -1,4 +1,4 @@
-import '../Sass/Homepage.scss';
+import '../Sass/pages/Homepage.scss';
 import { Link } from "react-router-dom";
  
 function Homepage() {

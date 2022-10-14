@@ -1,5 +1,5 @@
-@use './globals/fonts' as *;
-@use './globals/vars' as *;
+@use '../globals/fonts' as *;
+@use '../globals/vars' as *;
 
 .filter-container {
     width: clamp(300px, 20%, 400px);

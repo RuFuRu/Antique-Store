@@ -1,4 +1,4 @@
-import '../Sass/Information.scss';
+import '../Sass/components/Information.scss';
 
 function Information() {
     return (

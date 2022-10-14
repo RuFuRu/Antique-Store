@@ -4,7 +4,7 @@ import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import Information from "../Components/Information";
 import ShoppingItems from "../Components/ShoppingItems";
-import '../Sass/Collection.scss';
+import '../Sass/pages/Collection.scss';
 
 function Collection() {
     return (

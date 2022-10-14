@@ -1,4 +1,4 @@
-import '../Sass/ShoppingItems.scss';
+import '../Sass/components/ShoppingItems.scss';
 import ShoppingItemsList from './ShoppingItemsList';
 
 function ShoppingItems() {

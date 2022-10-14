@@ -1,4 +1,4 @@
-import '../Sass/Header.scss';
+import '../Sass/components/Header.scss';
 import shopping from '../img/shopping.svg';
 import { Link } from "react-router-dom";
 

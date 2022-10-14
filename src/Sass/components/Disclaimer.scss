@@ -1,8 +1,8 @@
-@use './globals/fonts' as *;
-@use './globals/vars' as *;
+@use '../globals/fonts' as *;
+@use '../globals/vars' as *;
 
 .disclaimer-container {
-    background-image: url('../img/oldpaper.jpg');
+    background-image: url('../../img/oldpaper.jpg');
     .disclaimer-h3 {
         padding-top: 1rem;
         font-size: 3rem;

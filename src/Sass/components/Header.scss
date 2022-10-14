@@ -1,13 +1,13 @@
-@use './globals/fonts.scss';
-@use './globals/vars.scss' as *;
-@use './globals/mixins.scss' as *;
+@use '../globals/fonts.scss';
+@use '../globals/vars.scss' as *;
+@use '../globals/mixins.scss' as *;
 
 nav {
   display: flex;
   align-items: center;
   padding: 1rem;
   column-gap: 3rem;
-  background-image: url('../img/oldpaper.jpg');
+  background-image: url('../../img/oldpaper.jpg');
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   font-family: 'Odin', sans-serif;
   .shopping-cart-img {

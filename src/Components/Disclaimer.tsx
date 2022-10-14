@@ -1,4 +1,4 @@
-import '../Sass/Disclaimer.scss';
+import '../Sass/components/Disclaimer.scss';
 
 function Disclaimer() {
     return (

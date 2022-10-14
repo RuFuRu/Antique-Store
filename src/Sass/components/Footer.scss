@@ -1,5 +1,5 @@
-@use './globals/fonts';
-@use './globals/vars' as *;
+@use '../globals/fonts';
+@use '../globals/vars' as *;
 
 .footer-container {
     background-color: $yellow-brown-mix;

@@ -1,6 +1,6 @@
-@use './globals/fonts.scss' as *;
-@use './globals/vars.scss' as *;
-@use './globals/mixins.scss' as *;
+@use '../globals/fonts.scss' as *;
+@use '../globals/vars.scss' as *;
+@use '../globals/mixins.scss' as *;
 
 main {
   padding: 2rem;
@@ -11,7 +11,7 @@ main {
     rgba(0, 0, 0, 0.7)
   ),
   /* bottom, image */
-  url('../img/shippainting.jpg');
+  url('../../img/shippainting.jpg');
   background-size: cover;
   height: 100vh;
   text-align: center;

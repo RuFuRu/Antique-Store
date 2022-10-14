@@ -1,6 +1,6 @@
 import { useContext, MouseEvent } from 'react';
 import AntiqueStoreContext from '../AntiqueStoreContext';
-import '../Sass/Filter.scss';
+import '../Sass/components/Filter.scss';
 
 
 
