@@ -1,3 +1,4 @@
+import Disclaimer from "../Components/Disclaimer";
 import Filter from "../Components/Filter";
 import Header from "../Components/Header";
 import Information from "../Components/Information";
@@ -16,6 +17,7 @@ function Collection() {
                     <ShoppingItems/>
                 </div>
             </div>
+            <Disclaimer/>
         </div>
     )
 }

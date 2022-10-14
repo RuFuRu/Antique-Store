@@ -1,0 +1,23 @@
+@use './globals/fonts' as *;
+@use './globals/vars' as *;
+
+.disclaimer-container {
+    background-image: url('../img/oldpaper.jpg');
+    .disclaimer-h3 {
+        padding-top: 1rem;
+        font-size: 3rem;
+        font-family: 'Odin', sans-serif;
+        text-align: center;
+    }
+    .disclaimer-flex-p-container {
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        justify-content: center;
+        .disclaimer-p {
+            text-align: center;
+            padding: 2rem;
+            width: clamp(200px, 30%, 600px);
+            font-weight: 600;
+        }
+    }
+}
