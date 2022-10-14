@@ -1,0 +1,10 @@
+@use './globals/fonts';
+@use './globals/vars' as *;
+
+.footer-container {
+    background-color: $yellow-brown-mix;
+    .footer-h3 {
+        padding: 1rem;
+        font-family: 'Odin', sans-serif;
+    }
+}

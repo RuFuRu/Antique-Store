@@ -1,5 +1,6 @@
 import Disclaimer from "../Components/Disclaimer";
 import Filter from "../Components/Filter";
+import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import Information from "../Components/Information";
 import ShoppingItems from "../Components/ShoppingItems";
@@ -18,6 +19,7 @@ function Collection() {
                 </div>
             </div>
             <Disclaimer/>
+            <Footer/>
         </div>
     )
 }
