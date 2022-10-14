@@ -47,5 +47,26 @@
         "price": 239.78,
         "url": "/shopItems/MHS_44141_Astrolabe.jpg",
         "tag": "navigation"
+    },
+    {
+        "id": 8,
+        "name": "Antique Clock",
+        "price": 99.99,
+        "url": "/shopItems/old_clock.jpg",
+        "tag": "clock"
+    },
+    {
+        "id": 9,
+        "name": "Old Wall Clock",
+        "price": 572.38,
+        "url": "/shopItems/wall_clock.png",
+        "tag": "clock"
+    },
+    {
+        "id": 10,
+        "name": "Golden Pocket Watch",
+        "price": 36.54,
+        "url": "/shopItems/pocket_watch.jpg",
+        "tag": "clock"
     }
 ]
