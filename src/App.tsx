@@ -4,7 +4,7 @@ import Collection from "./Pages/Collection";
 import ShoppingCard from "./Pages/ShoppingCard";
 import AntiqueStoreContext from "./AntiqueStoreContext";
 import { useState } from "react";
-import Item from "./Pages/Item";
+import Product from "./Pages/Product";
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
             <Route path="/" element={<Homepage/>}></Route>
             <Route path="/collection" element={<Collection/>}></Route>
             <Route path="/shoppingcard" element={<ShoppingCard/>}></Route>
-            <Route path="/collection/:id" element={<Item/>}></Route>
+            <Route path="/collection/:id" element={<Product/>}></Route>
           </Routes>
         </div>
       </BrowserRouter>
