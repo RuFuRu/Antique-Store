@@ -8,14 +8,6 @@ function Header() {
   const context = useContext(AntiqueStoreContext);
   const amount = context!.getOverallAmount();
 
-  /*function handleNumsOfItemsCircle() {
-    if(amount === 0) {
-      document.body.querySelector('.num-of-items-circle')?.setAttribute("style", "visibility: hidden");
-    } else {
-      document.body.querySelector('.num-of-items-circle')?.setAttribute("style", "visibility: visible");
-    }
-  }*/
-
   return (
     <nav>
       <h2><Link to="/">Antique Thunderstorm</Link></h2>
