@@ -13,7 +13,8 @@
 
 .product-page-left-side {
     .ppls-img {
-        max-width: 600px;
+        max-width: 500px;
+        max-height: 500px;
     }
 }
 
@@ -28,6 +29,13 @@
         font-family: "Montserrat", sans-serif;
         margin-top: 0.5rem;
         max-width: 600px;
+    }
+    .pprs-price {
+        text-align: center;
+        margin: 1rem 0;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 1.5rem;
     }
     .pprs-add-to-cart-container {
         display: grid;

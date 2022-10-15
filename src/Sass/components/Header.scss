@@ -30,3 +30,7 @@ h2 > a {
   @include handleAnchor();
   font-size: 2rem;
 }
+
+.num-of-items-circle {
+  display: none;
+}

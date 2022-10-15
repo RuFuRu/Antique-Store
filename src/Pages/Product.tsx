@@ -3,6 +3,7 @@ import Header from "../Components/Header";
 import Information from "../Components/Information";
 import shopItems from "../Data/shopItems.json";
 import '../Sass/pages/Product.scss';
+import currencyFormat from "../OtherFunctions/currencyFormat";
 
 
 function Product() {
@@ -25,6 +26,9 @@ function Product() {
                                 Reiciendis eaque nostrum aliquam dicta deserunt recusandae voluptates mollitia rerum quae cupiditate! 
                                 Quidem quo porro dolore enim, libero possimus accusantium nisi corporis.
                             </p>
+                            <div className="pprs-price">
+                                <p>{currencyFormat(item.price)}</p>
+                            </div>
                             <div className="pprs-add-to-cart-container">
                                 <input type="number" className="pprs-input"/>
                                 <button className="pprs-button">Add to cart</button>
