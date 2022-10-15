@@ -1,6 +1,6 @@
-@use '../globals/fonts.scss';
-@use '../globals/vars.scss' as *;
-@use '../globals/mixins.scss' as *;
+@use '../globals/fonts';
+@use '../globals/vars' as *;
+@use '../globals/mixins' as *;
 
 nav {
   display: flex;
