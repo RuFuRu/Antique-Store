@@ -1,8 +1,21 @@
 import '../Sass/components/Header.scss';
 import shopping from '../img/shopping.svg';
 import { Link } from "react-router-dom";
+import { useContext } from 'react';
+import AntiqueStoreContext from '../AntiqueStoreContext';
 
 function Header() {
+  const context = useContext(AntiqueStoreContext);
+  const amount = context!.getOverallAmount();
+
+  /*function handleNumsOfItemsCircle() {
+    if(amount === 0) {
+      document.body.querySelector('.num-of-items-circle')?.setAttribute("style", "visibility: hidden");
+    } else {
+      document.body.querySelector('.num-of-items-circle')?.setAttribute("style", "visibility: visible");
+    }
+  }*/
+
   return (
     <nav>
       <h2><Link to="/">Antique Thunderstorm</Link></h2>
@@ -10,7 +23,14 @@ function Header() {
         <Link to="/collection">Our Collection</Link>
       </div>
       <div className='header-a-con'>
-        <Link to="/shoppingcard"><img src={shopping} alt="shopping card" className="shopping-cart-img"/><div className="num-of-items-circle"><p>1</p></div></Link>
+        <Link to="/shoppingcard">
+          <img src={shopping} alt="shopping card" className="shopping-cart-img"/>
+          {amount > 0 &&
+          <div className="num-of-items-circle">
+            <p>{amount!}</p>
+          </div>
+          }
+        </Link>
       </div>
     </nav>
   );

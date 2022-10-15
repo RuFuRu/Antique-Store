@@ -8,11 +8,21 @@ import Product from "./Pages/Product";
 
 
 function App() {
+  type shopProduct = {
+    id: number,
+    amount: number | undefined;
+  }
+
   const [filter, setFilter] = useState<string | null>();
   const [unFilter, setUnFilter] = useState<boolean>(true);
+  const [shopProducts, setShopProducts] = useState<shopProduct[]>([{id: 0, amount: 0}]);
+
+  function getOverallAmount(): number {
+    return shopProducts.reduce((amount, item) => item.amount! + amount, 0);
+  }
 
   return (
-    <AntiqueStoreContext.Provider value={{filter, setFilter, unFilter, setUnFilter}}>
+    <AntiqueStoreContext.Provider value={{filter, setFilter, unFilter, setUnFilter, shopProducts, setShopProducts, getOverallAmount}}>
       <BrowserRouter>
         <div className="app">
           <Routes>

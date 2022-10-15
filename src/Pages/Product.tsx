@@ -4,11 +4,19 @@ import Information from "../Components/Information";
 import shopItems from "../Data/shopItems.json";
 import '../Sass/pages/Product.scss';
 import currencyFormat from "../OtherFunctions/currencyFormat";
+import { useContext, useState } from "react";
+import AntiqueStoreContext from "../AntiqueStoreContext";
 
 
 function Product() {
+    const context = useContext(AntiqueStoreContext);
     const params = useParams();
     const urlId = parseInt(params.id!);
+    const [value, setValue] = useState<number>();
+
+    function addToCart() {
+        context?.setShopProducts([...context.shopProducts, {id: urlId, amount: value}]);
+    }
 
     return (
         <div className="product-page-container">
@@ -30,8 +38,8 @@ function Product() {
                                 <p>{currencyFormat(item.price)}</p>
                             </div>
                             <div className="pprs-add-to-cart-container">
-                                <input type="number" className="pprs-input"/>
-                                <button className="pprs-button">Add to cart</button>
+                                <input type="number" className="pprs-input" name="pprs-input" onChange={(e) => setValue(parseInt(e.target.value))}/>
+                                <button className="pprs-button" onClick={addToCart}>Add to cart</button>
                             </div>
                         </div>
                     </div>
