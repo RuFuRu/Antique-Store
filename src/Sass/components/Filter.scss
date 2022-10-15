@@ -46,13 +46,13 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     background-color: transparent;
-    border: 2px solid hsl(0, 84%, 63%);
+    border: 2px solid $reddish;
     padding: 0.5rem;
     border-radius: 30px;
     cursor: pointer;
     font-weight: 700;
     &:hover {
-        background-color: hsl(0, 84%, 63%);
+        background-color: $reddish;
         color: white;
     }
 }
