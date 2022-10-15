@@ -10,10 +10,9 @@ import Product from "./Pages/Product";
 function App() {
   const [filter, setFilter] = useState<string | null>();
   const [unFilter, setUnFilter] = useState<boolean>(true);
-  const [numOfItems, setNumOfItems] = useState<number>(0);
 
   return (
-    <AntiqueStoreContext.Provider value={{filter, setFilter, unFilter, setUnFilter, numOfItems, setNumOfItems}}>
+    <AntiqueStoreContext.Provider value={{filter, setFilter, unFilter, setUnFilter}}>
       <BrowserRouter>
         <div className="app">
           <Routes>
