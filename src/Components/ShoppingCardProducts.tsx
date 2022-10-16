@@ -13,8 +13,34 @@ function ShoppingCardProducts({id, name, price, url}: Props) {
     const context = useContext(AntiqueStoreContext);
 
     function handleDelete(id: number) {
-        context?.setShopProducts(items => {
+        context!.setShopProducts(items => {
             return items.filter(item => item.id !== id);
+        })
+    }
+
+    function increaseAmount(id: number) {
+        context!.setShopProducts(items => items.map(item => {
+            if(item.id === id) {
+                return {...item, amount: item.amount! + 1}
+            } else {
+                return item;
+            }
+        }))
+    }
+
+    function decreaseAmount(id: number) {
+        context!.setShopProducts(items => {
+            if(items.find(item => item.id === id)!.amount === 0) {
+                return items.filter(item => item.id !== id);
+            } else {
+                return items.map(item => {
+                    if(item.id === id) {
+                        return {...item, amount: item.amount! - 1}
+                    } else {
+                        return item;
+                    }
+                })
+            }
         })
     }
 
@@ -29,8 +55,8 @@ function ShoppingCardProducts({id, name, price, url}: Props) {
                         <p>{currencyFormat(price)}
                         <span className="scp-np-span">x{item.amount}
                             <span className="scp-np-inc-dec-container">
-                                <button className="scp-np-button-increase">+</button>
-                                <button className="scp-np-button-decrease">-</button>
+                                <button className="scp-np-button-increase" onClick={() => increaseAmount(id)}>+</button>
+                                <button className="scp-np-button-decrease" onClick={() => decreaseAmount(id)}>-</button>
                             </span>
                         </span>
                         </p>
