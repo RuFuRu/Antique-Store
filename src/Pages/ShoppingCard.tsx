@@ -5,6 +5,8 @@ import Information from '../Components/Information';
 import '../Sass/pages/ShoppingCard.scss';
 import shopItems from '../Data/shopItems.json';
 import ShoppingCardProducts from '../Components/ShoppingCardProducts';
+import ShoppingCardForm from '../Components/ShoppingCardForm';
+import Footer from '../Components/Footer';
 
 function ShoppingCard() {
     const context = useContext(AntiqueStoreContext);
@@ -34,11 +36,13 @@ function ShoppingCard() {
                             ))
                         }
                     </div>
-                    <div className="sc-item-payment"></div>
+                    <div className="sc-item-payment">
+                        <ShoppingCardForm/>
+                    </div>
                 </div>
             </>
             }
-
+            <Footer/>
         </div>
     )
 }
