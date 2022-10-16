@@ -15,8 +15,22 @@ function Product() {
     const [value, setValue] = useState<number>();
 
     function addToCart() {
-        context?.setShopProducts([...context.shopProducts, {id: urlId, amount: value}]);
-    }
+        context!.setShopProducts(items => {
+            if(items.find(item => item.id === urlId) == null) {
+                return [...items, {id: urlId, amount: value!}];
+            } else {
+                return items.map(item => {
+                    if(item.id === urlId) {
+                        return {...item, amount: item.amount! + value!}
+                    } else {
+                        return item;
+                    }
+                })
+            }
+        })
+        //context?.setShopProducts([...context.shopProducts, {id: urlId, amount: value}]);
+        console.log(context?.shopProducts);
+    };
 
     return (
         <div className="product-page-container">
