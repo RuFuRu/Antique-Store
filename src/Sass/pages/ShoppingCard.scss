@@ -1,2 +1,79 @@
 @use '../globals/fonts';
-@use '../globals/vars';
+@use '../globals/vars' as *;
+
+.sc-no-amount-information {
+    margin-top: 3rem;
+    .sc-no-amount-p {
+        font-family: 'Monteserrat', sans-serif;
+        font-weight: 600;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+}
+
+.sc-h3 {
+    font-family: 'Odin', sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.sc-items-container {
+    display: flex;
+    flex: 1 1;
+    .sc-items {
+        width: 50%;
+    }
+    .sc-items-payment {
+        width: 50%;
+    }
+}
+
+.scp-container {
+    display: flex;
+    max-width: 600px;
+    gap: 20px;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid black;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    .scp-img {
+        width: 100px;
+        height: 100px;
+    }
+    .scp-name-price-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    span {
+        display: inline-block;
+        font-size: 0.7rem;
+        color: hsl(0, 1%, 43%);
+        position: relative;
+        left: 10px;
+    }
+    .scp-delete {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        button {
+            transition: all 0.3s ease-in;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            font-weight: 600;
+            width: 50px;
+            height: 50px;
+            border-radius: 20px;
+            border: none;
+            background-color: $reddish;
+            color: white;
+            cursor: pointer;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

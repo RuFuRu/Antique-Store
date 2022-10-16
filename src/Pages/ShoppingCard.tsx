@@ -4,6 +4,7 @@ import Header from '../Components/Header';
 import Information from '../Components/Information';
 import '../Sass/pages/ShoppingCard.scss';
 import shopItems from '../Data/shopItems.json';
+import ShoppingCardProducts from '../Components/ShoppingCardProducts';
 
 function ShoppingCard() {
     const context = useContext(AntiqueStoreContext);
@@ -25,9 +26,15 @@ function ShoppingCard() {
             {amount > 0 &&
             <>
                 <h3 className="sc-h3">Checkout</h3>
-                <div className="sc-items">
-                    {
-                    }
+                <div className="sc-items-container">
+                    <div className="sc-items">
+                        {
+                            shopItems.map(item => (
+                                <ShoppingCardProducts {...item}/>
+                            ))
+                        }
+                    </div>
+                    <div className="sc-item-payment"></div>
                 </div>
             </>
             }
