@@ -28,8 +28,6 @@ function Product() {
                 })
             }
         })
-        //context?.setShopProducts([...context.shopProducts, {id: urlId, amount: value}]);
-        console.log(context?.shopProducts);
     };
 
     return (
