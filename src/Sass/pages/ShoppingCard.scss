@@ -21,6 +21,7 @@
 .sc-items-container {
     display: flex;
     flex: 1 1;
+    margin-top: 2rem;
     .sc-items {
         width: 50%;
     }
@@ -48,12 +49,27 @@
         flex-direction: column;
         justify-content: space-evenly;
     }
-    span {
+    .scp-np-span {
         display: inline-block;
         font-size: 0.7rem;
         color: hsl(0, 1%, 43%);
         position: relative;
         left: 10px;
+        .scp-np-inc-dec-container {
+            margin-left: 0.5rem;
+            .scp-np-button-increase {
+                width: 20px;
+                border-radius: 20%;
+                border: none;
+                background-color: $checkout-green;
+                cursor: pointer;
+            }
+            .scp-np-button-decrease {
+                @extend .scp-np-button-increase;
+                background-color: $reddish;
+                margin-left: 0.1rem;
+            }
+        }
     }
     .scp-delete {
         margin-left: auto;
