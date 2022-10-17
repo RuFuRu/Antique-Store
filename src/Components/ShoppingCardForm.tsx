@@ -1,4 +1,16 @@
+import { useContext } from "react";
+import AntiqueStoreContext from "../AntiqueStoreContext";
+import shopItems from '../Data/shopItems.json';
+import currencyFormat from "../OtherFunctions/currencyFormat";
+
 function ShoppingCardForm() {
+    const context = useContext(AntiqueStoreContext);
+    const reducedTotal = context!.shopProducts.reduce((total, shopProduct) => {
+        const item = shopItems.find(itm => itm.id === shopProduct.id);
+        return total + (item?.price || 0) * shopProduct.amount!;
+    }, 0);
+    const total = () => reducedTotal > 100 ? reducedTotal : reducedTotal + 50;
+
     return (
         <>
             <form className="scf-form">
@@ -29,10 +41,10 @@ function ShoppingCardForm() {
             </form>
             <div className="scf-amount-to-be-payed">
                 <div className="scf-delivery">
-                    <h4>Delivery:</h4>
+                    <h4>Delivery: {currencyFormat(reducedTotal > 100 ? 0 : 50)}</h4>
                 </div>
                 <div className="scf-total">
-                    <h4>Total: </h4>
+                    <h4>Total: {currencyFormat(total())}</h4>
                 </div>
             </div>
             <div className="scf-payment">
