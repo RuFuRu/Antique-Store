@@ -24,7 +24,7 @@ function App() {
 
   return (
     <AntiqueStoreContext.Provider value={{filter, setFilter, unFilter, setUnFilter, shopProducts, setShopProducts, getOverallAmount}}>
-      <BrowserRouter>
+      <BrowserRouter basename="/">
         <div className="app">
           <Routes>
             <Route path="/" element={<Homepage/>}></Route>
