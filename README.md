@@ -1,2 +1,2 @@
 # Antique-Store
-A website of an Antique Store , built with React
+An Antique Store website, built with React , Typescript and Sass
