@@ -2,6 +2,7 @@ import { useContext } from "react";
 import AntiqueStoreContext from "../AntiqueStoreContext";
 import shopItems from '../Data/shopItems.json';
 import currencyFormat from "../OtherFunctions/currencyFormat";
+import {Link} from "react-router-dom";
 
 function ShoppingCardForm() {
     const context = useContext(AntiqueStoreContext);
@@ -48,7 +49,7 @@ function ShoppingCardForm() {
                 </div>
             </div>
             <div className="scf-payment">
-                <button>Proceed to payment</button>
+                <button><Link to={"/payment"}>Proceed to payment</Link></button>
             </div>
         </>
     )

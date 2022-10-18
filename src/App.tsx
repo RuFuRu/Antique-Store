@@ -5,6 +5,7 @@ import ShoppingCard from "./Pages/ShoppingCard";
 import AntiqueStoreContext from "./AntiqueStoreContext";
 import { useState } from "react";
 import Product from "./Pages/Product";
+import Payment from "./Pages/Payment";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
             <Route path="/collection" element={<Collection/>}></Route>
             <Route path="/shoppingcard" element={<ShoppingCard/>}></Route>
             <Route path="/collection/:id" element={<Product/>}></Route>
+            <Route path="/payment" element={<Payment/>}></Route>
           </Routes>
         </div>
       </BrowserRouter>
