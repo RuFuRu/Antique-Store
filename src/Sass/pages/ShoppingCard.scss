@@ -40,7 +40,7 @@
 
 .scp-container {
     display: flex;
-    width: clamp(300px, 50%, 600px);
+    width: clamp(350px, 50%, 600px);
     gap: 20px;
     font-family: 'Montserrat', sans-serif;
     border: 2px solid black;
@@ -149,5 +149,27 @@
     font-size: 1.2rem;
     .scf-delivery {
         margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 875px) {
+    .sc-items-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sc-items {
+        align-items: center !important;
+    }
+    .sc-item-payment {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .scf-form {
+        width: 200px;
+    }
+    .scf-payment {
+        width: 200px;
+        font-size: 0.8rem;
     }
 }
