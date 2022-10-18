@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/antique-store/static/css/main.9bc1b58c.css",
-    "main.js": "/antique-store/static/js/main.b75436ce.js",
-    "static/js/787.b5615642.chunk.js": "/antique-store/static/js/787.b5615642.chunk.js",
-    "static/media/oldpaper.jpg": "/antique-store/static/media/oldpaper.fa72e321086c5ff32b0f.jpg",
-    "static/media/shippainting.jpg": "/antique-store/static/media/shippainting.6b457346748d1167becc.jpg",
-    "static/media/Norse-Bold.otf": "/antique-store/static/media/Norse-Bold.5efe60ef5042faec1224.otf",
-    "static/media/shopping.svg": "/antique-store/static/media/shopping.a763153282805551230509a10c09bf96.svg",
-    "index.html": "/antique-store/index.html",
-    "main.9bc1b58c.css.map": "/antique-store/static/css/main.9bc1b58c.css.map",
-    "main.b75436ce.js.map": "/antique-store/static/js/main.b75436ce.js.map",
-    "787.b5615642.chunk.js.map": "/antique-store/static/js/787.b5615642.chunk.js.map"
+    "main.css": "/static/css/main.a8b36a16.css",
+    "main.js": "/static/js/main.dddd450a.js",
+    "static/js/787.b5615642.chunk.js": "/static/js/787.b5615642.chunk.js",
+    "static/media/oldpaper.jpg": "/static/media/oldpaper.fa72e321086c5ff32b0f.jpg",
+    "static/media/shippainting.jpg": "/static/media/shippainting.6b457346748d1167becc.jpg",
+    "static/media/Norse-Bold.otf": "/static/media/Norse-Bold.5efe60ef5042faec1224.otf",
+    "static/media/shopping.svg": "/static/media/shopping.a763153282805551230509a10c09bf96.svg",
+    "index.html": "/index.html",
+    "main.a8b36a16.css.map": "/static/css/main.a8b36a16.css.map",
+    "main.dddd450a.js.map": "/static/js/main.dddd450a.js.map",
+    "787.b5615642.chunk.js.map": "/static/js/787.b5615642.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9bc1b58c.css",
-    "static/js/main.b75436ce.js"
+    "static/css/main.a8b36a16.css",
+    "static/js/main.dddd450a.js"
   ]
 }
