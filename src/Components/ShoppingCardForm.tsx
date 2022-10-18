@@ -49,7 +49,7 @@ function ShoppingCardForm() {
                 </div>
             </div>
             <div className="scf-payment">
-                <button><Link to={"/payment"}>Proceed to payment</Link></button>
+                <Link to={"/payment"}><button>Proceed to payment</button></Link>
             </div>
         </>
     )

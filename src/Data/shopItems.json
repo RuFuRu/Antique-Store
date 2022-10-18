@@ -3,70 +3,70 @@
         "id": 1,
         "name": "Springfield 1822",
         "price": 1599.99,
-        "url": "/shopItems/YR0376116_Flintlock-gun.jpg",
+        "url": "/antique-store/shopItems/YR0376116_Flintlock-gun.jpg",
         "tag": "firearm"
     },
     {
         "id": 2,
         "name": "Spanish Flintlock Musket",
         "price": 3287.50,
-        "url": "/shopItems/Spanish_Escopeta_Flintlock_Musket.jpg",
+        "url": "/antique-store/shopItems/Spanish_Escopeta_Flintlock_Musket.jpg",
         "tag": "firearm"
     },
     {
         "id": 3,
         "name": "Japanese Tanegashima",
         "price": 7023.00,
-        "url": "/shopItems/Tanegashima_pistol.jpg",
+        "url": "/antique-store/shopItems/Tanegashima_pistol.jpg",
         "tag": "firearm"
     },
     {
         "id": 4,
         "name": "Flintlock Pistol",
         "price": 388.22,
-        "url": "/shopItems/YR0376116_Flintlock-gun.jpg",
+        "url": "/antique-store/shopItems/YR0376116_Flintlock-gun.jpg",
         "tag": "firearm"
     },
     {
         "id": 5,
         "name": "Indonesian matchlock",
         "price": 5321.74,
-        "url": "/shopItems/Indonesian_matchlock_19th_century.jpg",
+        "url": "/antique-store/shopItems/Indonesian_matchlock_19th_century.jpg",
         "tag": "firearm"
     },
     {
         "id": 6,
         "name": "Antique Compass",
         "price": 118.32,
-        "url": "/shopItems/kompass-navigation-vintage-clipart.png",
+        "url": "/antique-store/shopItems/kompass-navigation-vintage-clipart.png",
         "tag": "navigation"
     },
     {
         "id": 7,
         "name": "Astrolabe",
         "price": 239.78,
-        "url": "/shopItems/MHS_44141_Astrolabe.jpg",
+        "url": "/antique-store/shopItems/MHS_44141_Astrolabe.jpg",
         "tag": "navigation"
     },
     {
         "id": 8,
         "name": "Antique Clock",
         "price": 99.99,
-        "url": "/shopItems/old_clock.jpg",
+        "url": "/antique-store/shopItems/old_clock.jpg",
         "tag": "clock"
     },
     {
         "id": 9,
         "name": "Old Wall Clock",
         "price": 572.38,
-        "url": "/shopItems/wall_clock.png",
+        "url": "/antique-store/shopItems/wall_clock.png",
         "tag": "clock"
     },
     {
         "id": 10,
         "name": "Golden Pocket Watch",
         "price": 36.54,
-        "url": "/shopItems/pocket_watch.jpg",
+        "url": "/antique-store/shopItems/pocket_watch.jpg",
         "tag": "clock"
     }
 ]

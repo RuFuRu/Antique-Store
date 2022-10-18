@@ -140,10 +140,11 @@
         background-color: $checkout-green;
         border: none;
         cursor: pointer;
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
+        
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
     }
 }
 
