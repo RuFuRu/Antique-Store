@@ -151,8 +151,13 @@
     margin-top: 1rem;
     padding: 1rem;
     font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
     .scf-delivery {
         margin-bottom: 0.5rem;
+    }
+    .spacing {
+        display: inline-block;
+        width: 0.5rem;
     }
 }
 

@@ -42,10 +42,10 @@ function ShoppingCardForm() {
             </form>
             <div className="scf-amount-to-be-payed">
                 <div className="scf-delivery">
-                    <h4>Delivery: {currencyFormat(reducedTotal > 100 ? 0 : 50)}</h4>
+                    <h4>Delivery: <span className="spacing"></span>{currencyFormat(reducedTotal > 100 ? 0 : 50)}</h4>
                 </div>
                 <div className="scf-total">
-                    <h4>Total: {currencyFormat(total())}</h4>
+                    <h4>Total: <span className="spacing"></span>{currencyFormat(total())}</h4>
                 </div>
             </div>
             <div className="scf-payment">
