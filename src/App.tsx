@@ -1,4 +1,4 @@
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {HashRouter, Routes, Route} from "react-router-dom";
 import Homepage from "./Pages/Homepage";
 import Collection from "./Pages/Collection";
 import ShoppingCard from "./Pages/ShoppingCard";
@@ -24,7 +24,7 @@ function App() {
 
   return (
     <AntiqueStoreContext.Provider value={{filter, setFilter, unFilter, setUnFilter, shopProducts, setShopProducts, getOverallAmount}}>
-      <BrowserRouter basename="/antique-store">
+      <HashRouter basename="/antique-store">
         <div className="app">
           <Routes>
             <Route path="/" element={<Homepage/>}></Route>
@@ -34,7 +34,7 @@ function App() {
             <Route path="/payment" element={<Payment/>}></Route>
           </Routes>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </AntiqueStoreContext.Provider>
   )
 }
