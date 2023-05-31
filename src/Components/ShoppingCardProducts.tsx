@@ -1,6 +1,7 @@
-import { useContext } from "react";
-import AntiqueStoreContext from "../AntiqueStoreContext";
 import currencyFormat from '../OtherFunctions/currencyFormat';
+import { useSelector, useDispatch } from "react-redux";
+import { setShopProduct } from "../Features/shopProductsSlice";
+import { RootState } from "../App/store";
 
 interface Props {
     id: number;
@@ -9,45 +10,49 @@ interface Props {
     url: string;
 }
 
+type shopProduct = {
+    id: number,
+    amount: number | undefined;
+}
+
 function ShoppingCardProducts({id, name, price, url}: Props) {
-    const context = useContext(AntiqueStoreContext);
+    const shopProduct = useSelector((state: RootState) => state.shopProducts.value);
+    const dispatch = useDispatch();
 
     function handleDelete(id: number) {
-        context!.setShopProducts(items => {
-            return items.filter(item => item.id !== id);
-        })
+        dispatch(setShopProduct(shopProduct.filter(item => item.id !== id)))
     }
 
     function increaseAmount(id: number) {
-        context!.setShopProducts(items => items.map(item => {
+        dispatch(setShopProduct(shopProduct.map(item => {
             if(item.id === id) {
                 return {...item, amount: item.amount! + 1}
             } else {
                 return item;
             }
-        }))
+        })))
     }
 
     function decreaseAmount(id: number) {
-        context!.setShopProducts(items => {
-            if(items.find(item => item.id === id)!.amount === 0) {
-                return items.filter(item => item.id !== id);
-            } else {
-                return items.map(item => {
-                    if(item.id === id) {
-                        return {...item, amount: item.amount! - 1}
-                    } else {
-                        return item;
-                    }
-                })
-            }
-        })
+        let returnVal;
+        if(shopProduct.find(item => item.id === id)!.amount === 0) {
+            returnVal = shopProduct.filter(item => item.id !== id);
+        } else {
+            returnVal = shopProduct.map(item => {
+                if(item.id === id) {
+                    return {...item, amount: item.amount! - 1}
+                } else {
+                    return item;
+                }
+            })
+        }
+        dispatch(setShopProduct(returnVal))
     }
 
     return (
         <>
         {
-            context?.shopProducts.filter(item => item.id === id).map(item => (
+            shopProduct.filter(item => item.id === id).map(item => (
                 <div className="scp-container" key={item.id}>
                     <img src={url} alt="product-image" className="scp-img"/>
                     <div className="scp-name-price-container">

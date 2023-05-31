@@ -1,12 +1,12 @@
-import { useContext } from "react";
-import AntiqueStoreContext from "../AntiqueStoreContext";
 import shopItems from '../Data/shopItems.json';
 import currencyFormat from "../OtherFunctions/currencyFormat";
 import {Link} from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { RootState } from "../App/store";
 
 function ShoppingCardForm() {
-    const context = useContext(AntiqueStoreContext);
-    const reducedTotal = context!.shopProducts.reduce((total, shopProduct) => {
+    const shopProduct = useSelector((state: RootState) => state.shopProducts.value);
+    const reducedTotal = shopProduct.reduce((total, shopProduct) => {
         const item = shopItems.find(itm => itm.id === shopProduct.id);
         return total + (item?.price || 0) * shopProduct.amount!;
     }, 0);

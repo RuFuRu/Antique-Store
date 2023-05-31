@@ -1,19 +1,24 @@
-import { useContext, MouseEvent } from 'react';
-import AntiqueStoreContext from '../AntiqueStoreContext';
+import { MouseEvent } from 'react';
+import { useSelector, useDispatch } from "react-redux";
+import { RootState } from '../App/store';
 import '../Sass/components/Filter.scss';
+import { setFilter } from '../Features/filterSlice';
+import { setUnFilter } from '../Features/unFilterSlice';
 
 
 
 function Filter() {
-    const context = useContext(AntiqueStoreContext);
+    const filter = useSelector((state: RootState) => state.filtering.value);
+    const dispatch = useDispatch();
 
     const filterOut = (e: MouseEvent) => {
         const eventTarget = e.target as HTMLButtonElement;
         if(eventTarget.getAttribute('name') !== 'reset-filter') {
-            context?.setFilter(eventTarget.getAttribute('name'));
-            context?.setUnFilter(false);
+            dispatch(setFilter(eventTarget.getAttribute('name')!))
+            dispatch(setUnFilter(false));
+            console.log(filter)
         } else {
-            context?.setUnFilter(true);
+            dispatch(setUnFilter(true));
         }
     }
 

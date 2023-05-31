@@ -2,11 +2,11 @@ import '../Sass/components/Header.scss';
 import shopping from '../img/shopping.svg';
 import { Link } from "react-router-dom";
 import { useContext } from 'react';
-import AntiqueStoreContext from '../AntiqueStoreContext';
+import useOverallAmount from '../Hooks/useOverallAmount';
+
 
 function Header() {
-  const context = useContext(AntiqueStoreContext);
-  const amount = context!.getOverallAmount();
+  const amount = useOverallAmount();
 
   return (
     <nav>

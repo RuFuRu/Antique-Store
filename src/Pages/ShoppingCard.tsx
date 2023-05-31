@@ -1,5 +1,4 @@
 import { useContext } from 'react';
-import AntiqueStoreContext from '../AntiqueStoreContext';
 import Header from '../Components/Header';
 import Information from '../Components/Information';
 import '../Sass/pages/ShoppingCard.scss';
@@ -7,10 +6,10 @@ import shopItems from '../Data/shopItems.json';
 import ShoppingCardProducts from '../Components/ShoppingCardProducts';
 import ShoppingCardForm from '../Components/ShoppingCardForm';
 import Footer from '../Components/Footer';
+import useOverallAmount from '../Hooks/useOverallAmount';
 
 function ShoppingCard() {
-    const context = useContext(AntiqueStoreContext);
-    const amount = context!.getOverallAmount();
+    const amount = useOverallAmount();
 
     return (
         <div className="shoppingcard-container">

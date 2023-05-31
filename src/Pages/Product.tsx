@@ -4,30 +4,39 @@ import Information from "../Components/Information";
 import shopItems from "../Data/shopItems.json";
 import '../Sass/pages/Product.scss';
 import currencyFormat from "../OtherFunctions/currencyFormat";
-import { useContext, useState } from "react";
-import AntiqueStoreContext from "../AntiqueStoreContext";
+import { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { RootState } from "../App/store";
+import { setShopProduct } from "../Features/shopProductsSlice";
 
 
 function Product() {
-    const context = useContext(AntiqueStoreContext);
+    const shopProduct = useSelector((state: RootState) => state.shopProducts.value);
+    const dispatch = useDispatch();
     const params = useParams();
     const urlId = parseInt(params.id!);
     const [value, setValue] = useState<number>();
 
+    type shopProduct = {
+        id: number,
+        amount: number | undefined;
+    }
+
     function addToCart() {
-        context!.setShopProducts(items => {
-            if(items.find(item => item.id === urlId) == null) {
-                return [...items, {id: urlId, amount: value!}];
-            } else {
-                return items.map(item => {
-                    if(item.id === urlId) {
-                        return {...item, amount: item.amount! + value!}
-                    } else {
-                        return item;
-                    }
-                })
-            }
-        })
+        let returnVal: shopProduct[];
+        if(shopProduct.find(item => item.id === urlId) == null) {
+            returnVal = [...shopProduct, {id: urlId, amount: value!}];
+        } else {
+            returnVal = shopProduct.map(item => {
+                if(item.id === urlId) {
+                    return {...item, amount: item.amount! + value!}
+                } else {
+                    return item;
+                }
+            })
+        }
+        console.log(shopProduct);
+        dispatch(setShopProduct(returnVal));
     };
 
     return (
