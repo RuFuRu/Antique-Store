@@ -8,6 +8,7 @@ import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../App/store";
 import { setShopProduct } from "../Features/shopProductsSlice";
+import { shopProduct } from "../Types/types";
 
 
 function Product() {
@@ -16,11 +17,6 @@ function Product() {
     const params = useParams();
     const urlId = parseInt(params.id!);
     const [value, setValue] = useState<number>();
-
-    type shopProduct = {
-        id: number,
-        amount: number | undefined;
-    }
 
     function addToCart() {
         let returnVal: shopProduct[];

@@ -2,17 +2,13 @@ import currencyFormat from '../OtherFunctions/currencyFormat';
 import { useSelector, useDispatch } from "react-redux";
 import { setShopProduct } from "../Features/shopProductsSlice";
 import { RootState } from "../App/store";
+import { shopProduct } from '../Types/types';
 
 interface Props {
     id: number;
     name: string;
     price: number;
     url: string;
-}
-
-type shopProduct = {
-    id: number,
-    amount: number | undefined;
 }
 
 function ShoppingCardProducts({id, name, price, url}: Props) {
@@ -34,7 +30,7 @@ function ShoppingCardProducts({id, name, price, url}: Props) {
     }
 
     function decreaseAmount(id: number) {
-        let returnVal;
+        let returnVal: shopProduct[];
         if(shopProduct.find(item => item.id === id)!.amount === 0) {
             returnVal = shopProduct.filter(item => item.id !== id);
         } else {

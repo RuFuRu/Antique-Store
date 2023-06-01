@@ -1,9 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-
-type shopProduct = {
-    id: number,
-    amount: number | undefined;
-}
+import { shopProduct } from "../Types/types";
 
 const initialState: {value: shopProduct[]} = {
     value: [{id: 0, amount: 0}],
